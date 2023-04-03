@@ -18,7 +18,7 @@ Open [https://localhost:3000](https://localhost:3000) within your browser.
 
 ##### Gallery Minimap
 
-![Gallery Minimap](https://i.imgur.com/BToaRFS.gif)
+![Gallery Minimap](https://i.imgur.com/m4e5vNi.gif)
 
 ## Images
 
