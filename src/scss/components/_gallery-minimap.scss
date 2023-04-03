@@ -88,6 +88,11 @@
   }
 }
 
+.gallery__trigger picture {
+  display: flex;
+  border-radius: inherit;
+}
+
 .gallery__trigger img {
   height: 100%;
   border-radius: inherit;

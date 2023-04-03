@@ -18,7 +18,7 @@ window.addEventListener('load', () => {
 
   const generateMinimapItem = (element) => {
     const id = element.getAttribute('id');
-    const src = element.querySelector('img').getAttribute('src');
+    const srcset = element.querySelector('source').getAttribute('srcset');
     const classes = element.classList;
 
     // Create a button element
@@ -32,7 +32,7 @@ window.addEventListener('load', () => {
 
     // Create an image element and set its source to the retrieved image src
     const image = document.createElement('img');
-    image.setAttribute('src', src);
+    image.setAttribute('src', srcset);
     image.setAttribute('alt', '');
 
     button.appendChild(image);

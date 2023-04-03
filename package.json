@@ -1,8 +1,7 @@
 {
-  "name": "gulp-starter",
+  "name": "gallery-with-minimap",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "build": "gulp build",
     "deploy": "gulp build && gh-pages -d dist"

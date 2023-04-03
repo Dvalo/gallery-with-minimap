@@ -85,23 +85,41 @@ const html = () => {
 };
 
 const images = () => {
-  return (
-    gulp
-      .src(paths.image.src)
-      .pipe(imagemin())
-      .pipe(
-        imageResponsive({
-          formats: [
-            { width: 480, format: 'webp', rename: { suffix: '-sm' } },
-            { width: 768, format: 'webp', rename: { suffix: '-md' } },
-            { width: 1024, format: 'webp', rename: { suffix: '-lg' } },
-            { width: 1920, format: 'webp', rename: { suffix: '-xl' } },
-            { format: 'jpeg' },
-          ],
-        })
-      )
-      .pipe(gulp.dest(paths.image.dest))
-  );
+  return gulp
+    .src(paths.image.src)
+    .pipe(imagemin())
+    .pipe(
+      imageResponsive({
+        formats: [
+          {
+            width: 480,
+            format: 'webp',
+            webpOptions: { quality: 50 },
+            rename: { suffix: '-sm' },
+          },
+          {
+            width: 768,
+            format: 'webp',
+            webpOptions: { quality: 50 },
+            rename: { suffix: '-md' },
+          },
+          {
+            width: 1024,
+            format: 'webp',
+            webpOptions: { quality: 50 },
+            rename: { suffix: '-lg' },
+          },
+          {
+            width: 1920,
+            format: 'webp',
+            webpOptions: { quality: 50 },
+            rename: { suffix: '-xl' },
+          },
+          { format: 'webp', webpOptions: { quality: 50 } },
+        ],
+      })
+    )
+    .pipe(gulp.dest(paths.image.dest));
 };
 
 const watch = () => {
