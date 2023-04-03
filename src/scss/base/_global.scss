@@ -1,0 +1,27 @@
+body {
+  background: $c-primary;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.align-end {
+  @include bp-up(md) {
+    align-self: flex-end;
+  }
+}
+
+.align-center {
+  @include bp-up(md) {
+    align-self: center;
+  }
+}
+
+.small img {
+  @include bp-up(md) {
+    max-height: 70vh;
+  }
+}
