@@ -14,11 +14,11 @@ Open [https://localhost:3000](https://localhost:3000) within your browser.
 
 ##### Main Gallery
 
-![Main Gallery](https://i.imgur.com/HQ8ZOOA.gif)
+![Main Gallery](https://i.imgur.com/Iv9rjwo.gif)
 
 ##### Gallery Minimap
 
-![Gallery Minimap](https://i.imgur.com/jjhlMxP.gif)
+![Gallery Minimap](https://i.imgur.com/BToaRFS.gif)
 
 ## Images
 
