@@ -10,7 +10,6 @@ const cleanCSS = require('gulp-clean-css');
 const autoprefixer = require('gulp-autoprefixer');
 const dependents = require('gulp-dependents');
 const imagemin = require('gulp-imagemin');
-const imageminWebp = require('imagemin-webp');
 const imageResponsive = require('gulp-sharp-responsive');
 const del = require('del');
 const browserSync = require('browser-sync').create();
@@ -89,7 +88,6 @@ const images = () => {
   return (
     gulp
       .src(paths.image.src)
-      // .pipe(imagemin([imageminWebp({ quality: 5 })]))
       .pipe(imagemin())
       .pipe(
         imageResponsive({
@@ -98,6 +96,7 @@ const images = () => {
             { width: 768, format: 'webp', rename: { suffix: '-md' } },
             { width: 1024, format: 'webp', rename: { suffix: '-lg' } },
             { width: 1920, format: 'webp', rename: { suffix: '-xl' } },
+            { format: 'jpeg' },
           ],
         })
       )
